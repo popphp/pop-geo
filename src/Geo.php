@@ -313,23 +313,23 @@ class Geo
             // Get base info by city
             if ($this->databases['city']) {
                 $data = geoip_record_by_name($this->host);
-                $this->hostInfo['areaCode'] = $data['area_code'];
-                $this->hostInfo['city'] = $data['city'];
+                $this->hostInfo['areaCode']      = $data['area_code'];
+                $this->hostInfo['city']          = $data['city'];
                 $this->hostInfo['continentCode'] = $data['continent_code'];
-                $this->hostInfo['country'] = $data['country_name'];
-                $this->hostInfo['countryCode'] = $data['country_code'];
-                $this->hostInfo['countryCode3'] = $data['country_code3'];
-                $this->hostInfo['dmaCode'] = $data['dma_code'];
-                $this->hostInfo['latitude'] = $data['latitude'];
-                $this->hostInfo['longitude'] = $data['longitude'];
-                $this->hostInfo['postalCode'] = $data['postal_code'];
-                $this->hostInfo['region'] = $data['region'];
+                $this->hostInfo['country']       = $data['country_name'];
+                $this->hostInfo['countryCode']   = $data['country_code'];
+                $this->hostInfo['countryCode3']  = $data['country_code3'];
+                $this->hostInfo['dmaCode']       = $data['dma_code'];
+                $this->hostInfo['latitude']      = $data['latitude'];
+                $this->hostInfo['longitude']     = $data['longitude'];
+                $this->hostInfo['postalCode']    = $data['postal_code'];
+                $this->hostInfo['region']        = $data['region'];
             // Else, get base info by country
             } else if ($this->databases['country']) {
                 $this->hostInfo['continentCode'] = geoip_continent_code_by_name($this->host);
-                $this->hostInfo['country'] = geoip_country_name_by_name($this->host);
-                $this->hostInfo['countryCode'] = geoip_country_code_by_name($this->host);
-                $this->hostInfo['countryCode3'] = geoip_country_code3_by_name($this->host);
+                $this->hostInfo['country']       = geoip_country_name_by_name($this->host);
+                $this->hostInfo['countryCode']   = geoip_country_code_by_name($this->host);
+                $this->hostInfo['countryCode3']  = geoip_country_code3_by_name($this->host);
             }
 
             // If available, get ISP name
