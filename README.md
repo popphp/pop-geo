@@ -7,7 +7,7 @@ pop-geo
 OVERVIEW
 --------
 `pop-geo` is a component for leveraging the GeoIP databases and calculating information
-about IP location as well as distances between longitude and latitude points.
+about IP location as well as distances between sets of longitude and latitude points.
 
 `pop-geo` is a component of the [Pop PHP Framework](http://www.popphp.org/).
 
@@ -22,7 +22,7 @@ BASIC USAGE
 -----------
 
 If the GeoIP extension and databases are installed, it will autodetect information
-based off of the user's IP. 
+based on the IP. 
 
 ```php
 use Pop\Geo\Geo;
