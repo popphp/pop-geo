@@ -2,7 +2,7 @@ pop-geo
 =======
 
 [![Build Status](https://travis-ci.org/popphp/pop-geo.svg?branch=master)](https://travis-ci.org/popphp/pop-geo)
-[![Coverage Status](http://www.popphp.org/cc/coverage.php?comp=pop-geo)](http://www.popphp.org/cc/pop-geo/)
+[![Coverage Status](http://cc.popphp.org/coverage.php?comp=pop-geo)](http://cc.popphp.org/pop-geo/)
 
 OVERVIEW
 --------
@@ -22,7 +22,7 @@ BASIC USAGE
 -----------
 
 If the GeoIP extension and databases are installed, it will autodetect information
-based on the IP. 
+based on the IP.
 
 ```php
 use Pop\Geo\Geo;
