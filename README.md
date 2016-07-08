@@ -4,6 +4,11 @@ pop-geo
 [![Build Status](https://travis-ci.org/popphp/pop-geo.svg?branch=master)](https://travis-ci.org/popphp/pop-geo)
 [![Coverage Status](http://cc.popphp.org/coverage.php?comp=pop-geo)](http://cc.popphp.org/pop-geo/)
 
+END OF LIFE
+-----------
+The `pop-geo` component v2.1.0 is now end-of-life and will no longer be supported due
+to lack of support for the GeoIP extension in PHP 7.
+
 OVERVIEW
 --------
 `pop-geo` is a component for leveraging the GeoIP databases and calculating information
